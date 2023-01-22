@@ -10,7 +10,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Frontend Bellashuv</title>
+    <title>InWood</title>
     <link
       rel="stylesheet"
       href="./slick-1.8.1/slick/slick-theme.css"
@@ -25,6 +25,220 @@
     />
   </head>
   <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <div class="site-header__top">
+          <div class="container">
+            <div class="site-header__top__inner">
+              <div class="responsive-design-style">
+                <a href="./index.html">
+                  <img
+                    src="./images/logo.svg"
+                    alt="Logo"
+                  />
+                </a>
+                <nav class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a
+                        href="#"
+                        class="nav__link active-page"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="#"
+                        class="nav__link"
+                      >
+                        Products
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="#"
+                        class="nav__link"
+                      >
+                        Categories
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="#"
+                        class="nav__link"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="#"
+                        class="nav__link"
+                      >
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <button
+                  class="menu-btn"
+                  onclick="openMenu()"
+                ></button>
+              </div>
+              <div class="menu">
+                <button
+                  class="menu__close"
+                  onclick="closeMenu()
+                "
+                ></button>
+                <ul class="menu__main__list">
+                  <li class="menu__main__item">
+                    <a
+                      class="menu__main-links"
+                      href="#"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li class="menu__main__item">
+                    <a
+                      class="menu__main-links"
+                      href="#"
+                    >
+                      Products
+                    </a>
+                  </li>
+                  <li class="menu__main__item">
+                    <a
+                      class="menu__main-links"
+                      href="#"
+                    >
+                      Category
+                    </a>
+                  </li>
+                  <li class="menu__main__item">
+                    <a
+                      class="menu__main-links"
+                      href="#"
+                    >
+                      About us
+                    </a>
+                  </li>
+                  <li class="menu__main__item">
+                    <a
+                      class="menu__main-links"
+                      href="#"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="icon__list">
+                <li class="icons__item">
+                  <a
+                    class="icons__link"
+                    href="#"
+                  >
+                    <img
+                      src="./images/search-icon.svg"
+                      alt="Search"
+                    />
+                  </a>
+                </li>
+                <li class="icons__item">
+                  <a
+                    class="icons__link"
+                    href="#"
+                  >
+                    <img
+                      src="./images/bookmark-icon.svg"
+                      alt="Bookmark"
+                    />
+                  </a>
+                </li>
+                <li class="icons__item">
+                  <a
+                    class="icons__link"
+                    href="#"
+                    onclick="openModal()"
+                  >
+                    <img
+                      src="./images/user-account-icon.svg"
+                      alt="User Account"
+                    />
+                  </a>
+                  <div
+                    class="modal-bg"
+                    onclick="closeModal()"
+                  ></div>
+                  <div class="modal">
+                    <div class="modal__header">
+                      <strong class="modal__title">login</strong>
+                      <button
+                        class="modal__exit"
+                        onclick="closeModal()"
+                      ></button>
+                    </div>
+                    <form
+                      class="modal__login"
+                      action="https://echo.htmlacademy.ru/"
+                      method="POST"
+                      autocomplete="off"
+                    >
+                      <input
+                        name="user-name"
+                        class="modal__input"
+                        id="user-name"
+                        type="text"
+                        placeholder="User Name"
+                        aria-label="User name"
+                      />
+                      <label for="user-name"></label>
+                      <input
+                        name="user-password"
+                        class="modal__input modal__user-password"
+                        id="user-password"
+                        type="text"
+                        placeholder="Password"
+                        aria-label="Password"
+                      />
+                      <label for="user-password"></label>
+                      <button
+                        class="modal__btn"
+                        type="submit"
+                      >
+                        Log in
+                      </button>
+                    </form>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="site-header__bottom">
+          <div class="container">
+            <div class="site-header__bottom__inner">
+              <h1 class="site-header__bottom__title">
+                Exclusive Deals of Furniture Collection
+              </h1>
+              <p class="site-header__bottom__text">
+                Explore different categories. Find the best deals.
+              </p>
+              <a
+                class="site-header__bottom__btn"
+                href="#"
+              >
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./slick-1.8.1/slick/slick.min.js"></script>
     <script src="./js/main.js"></script>
