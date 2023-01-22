@@ -1,5 +1,4 @@
 .site-header {
-  padding: 26px 0;
   background-image: url('../images/header-bg.jpg');
   background-position: top center;
   background-repeat: no-repeat;
@@ -9,6 +8,7 @@
 
 .site-header__top__inner {
   @include super-flex;
+  padding: 26px 0;
 }
 
 .responsive-design-style {
@@ -242,6 +242,12 @@
 }
 
 @include media(1024px) {
+  .site-header {
+    background-image: url('../images/header-lap-top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
   .responsive-design-style {
     max-width: 450px;
   }
@@ -301,6 +307,12 @@
 }
 
 @include media(765px) {
+  .site-header {
+    background-image: url('../images/header-tablet-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
   .responsive-design-style {
     max-width: 350px;
   }
@@ -338,6 +350,12 @@
 }
 
 @include media(590px) {
+  .site-header {
+    background-image: url('../images/header-tablet-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
   .menu__close {
     right: calc(50% - 25px);
   }
@@ -414,7 +432,7 @@
 // HEADER-BOTTOM STARTED
 
 .site-header__bottom {
-  padding: 245px 0 354px;
+  padding: 245px 0 620px;
 }
 
 .site-header__bottom__inner {
@@ -454,6 +472,10 @@
 }
 
 @include media(1024px) {
+  .site-header__bottom {
+    padding: 88px 0 276px;
+  }
+
   .site-header__bottom__inner {
     max-width: 608px;
   }
@@ -465,6 +487,10 @@
 }
 
 @include media(576px) {
+  .site-header__bottom {
+    padding: 128px 0 286px;
+  }
+
   .site-header__bottom__inner {
     max-width: 288px;
     margin: 0 auto;
